@@ -10,10 +10,11 @@ class TestSlidesParser(unittest.TestCase):
 
 	def test0(self):
 		# Ensure test images dir exists
-		test_path = os.path.join(os.getcwd(), '..', 'palbum-old', 'Images')
+		test_path = os.path.join(os.getcwd(), '..', 'Images')
 		self.assertIsNotNone(test_path)
 		
 		# Run code
+		i_to_h = slides_parser.image_to_html(test_path, "dark")
 		i_to_h = slides_parser.image_to_html(test_path, "light")
 		i_to_h.image_retrieve()
 
