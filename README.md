@@ -1,8 +1,10 @@
-pAlbum
+#pAlbum
 ==================
 
-Class Project:
+##Class Project:
+
   Uses beautifulSoup to:
-    - parse html templates
-    - evaluate expressions in the templates
-    - output valid html
+
+    * parse html templates
+    * evaluate expressions in the templates
+    * output valid html
